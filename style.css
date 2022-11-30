@@ -5,5 +5,134 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient();
+   /* background-image: linear-gradient();*/
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   background-color: whitesmoke;
 }
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 197px;
+    height: 56px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative:
+}
+.nav-links ul li a{
+    color: hsl(231, 86%, 17%);
+    text-decoration: Merriweather;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;   
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: burlywood;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+height: 133px;
+width: 659px;
+left: 55px;
+top: 288px;
+border-radius: nullpx;
+}
+.text-box hl{
+font-family: Merriweather;
+font-size: 43px;
+font-weight: 900;
+line-height: 52px;
+letter-spacing: 0em;
+text-align: center;
+color: #252F65;
+}
+.text-box p{
+    height: 53px;
+    width: 535px;
+    left: 104px;
+    top: 406px;
+    border-radius: nullpx;
+    color:#252F65;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.hero-btn{
+    height: 33px;
+    width: 185px;
+    left: 51px;
+    top: 20px;
+    border-radius: nullpx;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(111, 48, 150, 1);
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    position: relative;
+    
+}
+.image{
+    height: 647px;
+    width: 647px;
+    left: 694px;
+    top: -150px;
+    border-radius: 0px;
+    position: relative;
+}
+.hero-btn:hover{
+    border: 1px  rgba(111, 48, 150, 1);
+    transition: 1s;
+    background-color: rgba(111, 48, 150, 1);
+}
+@media(max-width: 700px)
+{  .text-box hl{
+    font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+}
+.nav-links ul li{
+    display: block;
+}
+/*optional
+.nav-links{
+    position:absolute;
+    background: blueviolet;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+}
+}
+*/
